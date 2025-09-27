@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using todoListApi.Models;
+using todoListApi.Models.DTOs;
 using todoListApi.Services;
 
 namespace todoListApi.Controllers
@@ -64,14 +65,4 @@ namespace todoListApi.Controllers
         }
     }
 
-    public class TaskCreateDTO
-    {
-        public string Title { get; set; }
-    }
-
-    public class TaskUpdateDTO
-    {
-        public string Title { get; set; }
-        public bool Completed { get; set; }
-    }
 }
