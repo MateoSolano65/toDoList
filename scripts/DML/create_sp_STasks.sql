@@ -1,0 +1,9 @@
+USE toDoList
+GO
+
+CREATE OR ALTER PROCEDURE STasks
+AS
+BEGIN
+  SELECT *
+  FROM tasks;
+END

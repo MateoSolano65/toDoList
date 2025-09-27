@@ -1,0 +1,11 @@
+USE toDoList
+GO
+
+CREATE OR ALTER PROCEDURE STaskById
+  @id INT
+AS
+BEGIN
+  SELECT *
+  FROM tasks
+  WHERE id = @id;
+END
